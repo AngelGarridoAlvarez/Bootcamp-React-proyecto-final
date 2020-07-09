@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { ButtonComponent } from "../../shared/components/ButtonComponent";
+import { Link } from "react-router-dom";
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -39,8 +40,10 @@ export function CardItem(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <ButtonComponent title={props.textButton}>
-          </ButtonComponent>
+          <Link to={props.route}>
+            <ButtonComponent title={props.textButton}>
+            </ButtonComponent>
+          </Link>
           <Button size="small" color="primary">
             {props.link}
           </Button>

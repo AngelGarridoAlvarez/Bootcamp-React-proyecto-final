@@ -12,7 +12,7 @@ export function Welcome() {
       text: 'Encuentra a tu guardián y disfruta a tu manera. Miles de usuarios ya están aprovechando las ventajas.',
       textButton: 'Continuar',
       link: '',
-      route: '/login'
+      route: '/welcome2'
     }
   ]
 
