@@ -26,7 +26,7 @@ function App() {
           <Welcome></Welcome>
         </Route>
         <Route path="/button">
-          <ButtonComponent title = "Hola que ase" numer = {2}/>
+          <ButtonComponent title = "Hola que ase"/>
         </Route>
         <Route path="/">
           <Start></Start>
