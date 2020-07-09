@@ -1,26 +1,15 @@
 import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Start } from './pages/Start/Start';
-import { Welcome } from './pages/Welcome/WelcomeComponents/WelcomeComponents';
 
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/start">Start</Link>
-          </li>
-          <li>
-            <Link to="/welcome">Welcome</Link>
-          </li>
-        </ul>
-      </nav>
       <Switch>
-        <Route path="/welcome">
+        {/* <Route path="/welcome">
           <Welcome></Welcome>
-        </Route>
+        </Route> */}
         <Route path="/">
           <Start></Start>
         </Route>
