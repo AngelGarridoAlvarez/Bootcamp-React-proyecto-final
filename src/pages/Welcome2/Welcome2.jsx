@@ -11,7 +11,8 @@ export function Welcome2() {
       title: 'El mismo precio en cualquier parte',
       text: 'Dispondrás de un precio fijo estés donde estés sin importar el tamaño o el peso.',
       textButton: 'Empezar Ya',
-      link: 'Consulta los precios'
+      link: 'Consulta los precios',
+      route: '/login'
     }
   ]
 

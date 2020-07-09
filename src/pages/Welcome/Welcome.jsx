@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../styles/start&welcome.scss';
 import { CardComponent } from "../../modules/Card/CardComponent";
+import '../../styles/start&welcome.scss';
 
 export function Welcome() {
 
@@ -11,7 +11,8 @@ export function Welcome() {
       title: 'Prepárate para liberarte de tu equipaje',
       text: 'Encuentra a tu guardián y disfruta a tu manera. Miles de usuarios ya están aprovechando las ventajas.',
       textButton: 'Continuar',
-      link: ''
+      link: '',
+      route: '/login'
     }
   ]
 
