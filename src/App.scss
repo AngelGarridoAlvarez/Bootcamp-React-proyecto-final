@@ -1,3 +1,13 @@
+@font-face {
+  font-family: NotoSansRegular;
+  src: url(shared/fonts/noto-sans/NotoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url(shared/fonts/noto-sans/NotoSans-Bold.ttf);
+}
+
 .App {
   text-align: center;
 }
