@@ -3,7 +3,7 @@ import './App.scss';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Start } from './pages/Start/Start';
 import { Welcome } from './pages/Welcome/WelcomeComponents/WelcomeComponents';
-import { ButtonComponent } from './shared/components/ButtonComponent'
+import { OrangeButtonComponent } from './shared/components/OrangeButtonComponent'
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <Welcome></Welcome>
         </Route>
         <Route path="/button">
-          <ButtonComponent title = "Hola que ase"/>
+          <OrangeButtonComponent title = "Hola que ase"/>
         </Route>
         <Route path="/">
           <Start></Start>
