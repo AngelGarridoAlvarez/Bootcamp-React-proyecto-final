@@ -1,0 +1,30 @@
+.b-material-ui-button {
+  &.MuiButton-contained{
+    color: rgb(255, 255, 255);
+    background-color: #f68e37;
+    font-size: 7pt;
+    font-family: NotoSansBold;
+    text-transform: unset;
+    box-shadow: unset;
+    &:hover {
+      background-color: #fca700;
+    }
+  }
+
+
+
+}
+
+/*
+Copy into app.scss
+
+@font-face {
+  font-family: NotoSansRegular;
+  src: url(shared/fonts/noto-sans/NotoSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: NotoSansBold;
+  src: url(shared/fonts/noto-sans/NotoSans-Bold.ttf);
+}
+ */
