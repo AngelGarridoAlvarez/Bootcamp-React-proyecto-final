@@ -41,14 +41,12 @@ export function CardItem(props) {
             <Typography variant="body2" color="textSecondary" component="p">{props.text}</Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
+        <CardActions className="d-flex justify-content-center">
           <Link to={props.route}>
             <ButtonComponent title={props.textButton}>
             </ButtonComponent>
           </Link>
-          <Button size="small" color="primary">
-            {props.link}
-          </Button>
+
         </CardActions>
       </Card>
       </div>
