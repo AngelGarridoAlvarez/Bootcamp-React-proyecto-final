@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { ButtonComponent } from "../../shared/components/ButtonComponent";
-import { Link } from "react-router-dom";
+import { ButtonComponent } from '../../shared/components/ButtonComponent';
+import { useHistory } from "react-router-dom";
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -22,6 +22,11 @@ const useStyles = makeStyles({
 
 export function CardItem(props) {
 
+  const history = useHistory();
+  const redirect = () => {
+    history.push(props.route);
+  }
+
   const classes = useStyles();
 
   return (
@@ -40,10 +45,8 @@ export function CardItem(props) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Link to={props.route}>
-            <ButtonComponent title={props.textButton}>
-            </ButtonComponent>
-          </Link>
+          <ButtonComponent onClick={redirect} title={props.textButton}>
+          </ButtonComponent>
           <Button size="small" color="primary">
             {props.link}
           </Button>

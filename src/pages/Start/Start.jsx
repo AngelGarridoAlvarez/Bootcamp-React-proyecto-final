@@ -7,7 +7,7 @@ export function Start() {
   const history = useHistory();
 
   useEffect(() => {
-    setTimeout(function(){ history.push('/welcome') }, 3000);
+    setTimeout(function(){ history.push('/welcome') }, 1500);
   })
 
   return (
