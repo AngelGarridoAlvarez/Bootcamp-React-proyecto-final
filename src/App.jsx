@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";https://gitlab.com/AngelGarridhttps://gitlab.com/AngelGarridohttps://gitlab.com/AngelGarridoo
 import { Start } from './pages/Start/Start';
 import { Welcome } from './pages/Welcome/WelcomeComponents/WelcomeComponents';
 import { OrangeButtonComponent } from './shared/components/OrangeButtonComponent'
