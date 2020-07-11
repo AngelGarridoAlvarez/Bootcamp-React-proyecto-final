@@ -13,7 +13,9 @@ import '../../styles/start&welcome.scss'
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: "90%",
+    height: "90%",
+
   },
   media: {
     height: 300,
@@ -30,7 +32,7 @@ export function CardItem(props) {
   const classes = useStyles();
 
   return (
-      <div className="container h-100 c-start">
+      <div className="container h-100 c-start col-auto">
         <div className="row h-100 justify-content-center align-items-center ">
       <Card className={classes.root}>
         <CardActionArea>
@@ -45,10 +47,10 @@ export function CardItem(props) {
             <Typography variant="body2" color="textSecondary" component="p">{props.text}</Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions className="d-flex justify-content-center">
+        <CardActions className="justify-content-center flex-column">
           <ButtonComponent onClick={redirect} title={props.textButton}>
           </ButtonComponent>
-          <Link>{props.link}</Link>
+          <Link className ="linkText">{props.link}</Link>
         </CardActions>
       </Card>
       </div>

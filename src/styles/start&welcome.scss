@@ -14,8 +14,17 @@
   background: linear-gradient(0deg, rgba(249,165,25,1) 0%, rgba(255,206,50,1) 100%);
 
   .MuiCardMedia-root{
-    background-size: 50%;
+    background-size: 35%;
+  }
 
+  .linkText{
+    font-size: 7pt;
+    padding: 3px;
+    text-decoration: underline;
+  }
+
+  .oneElementPerLine{
+    display: block;
   }
 
   &__img {

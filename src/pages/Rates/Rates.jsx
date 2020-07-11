@@ -1,10 +1,11 @@
 import React from 'react';
+import SelectAutocompleteComponent from "../../shared/components/SelectAutocompleteComponent";
 
 export function Rates() {
 
+  const options = ['Europa', 'Norteamérica', 'Sudamérica', 'Asia', 'Oceanía', 'Africa', 'Albacete'];
+
   return (
-    <>
-      <h1>Rates component is working in progress...</h1>
-    </>
+      <SelectAutocompleteComponent options={options}/>
   )
 }

@@ -12,19 +12,19 @@ function App() {
     <Router>
       <Switch>
         <Route path="/rates">
-          <Rates></Rates>
+          <Rates/>
         </Route>
         <Route path="/login">
-          <Login></Login>
+          <Login/>
         </Route>
         <Route path="/welcome">
-          <Welcome></Welcome>
+          <Welcome/>
         </Route>
         <Route path="/welcome2">
-          <Welcome2></Welcome2>
+          <Welcome2/>
         </Route>
         <Route path="/">
-          <Start></Start>
+          <Start/>
         </Route>
       </Switch>
     </Router>
