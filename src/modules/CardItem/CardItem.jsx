@@ -47,7 +47,7 @@ export function CardItem(props) {
             <Typography variant="body2" color="textSecondary" component="p">{props.text}</Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions className="justify-content-center flex-column">
+        <CardActions className="justify-content-center flex-column toTheBottom">
           <ButtonComponent onClick={redirect} title={props.textButton}>
           </ButtonComponent>
           <Link to="/rates" className ="linkText">{props.link}</Link>

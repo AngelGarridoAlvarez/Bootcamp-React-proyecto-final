@@ -1,0 +1,22 @@
+
+.ratesCards{
+  text-align: center;
+  color: white;
+  .card1{
+    background-color: #fd8228;
+    .MuiCardContent-root:last-child {
+      padding-bottom: 24px;
+    }
+  }
+  .card2{
+    background-color: #00b3e1;
+    .MuiCardContent-root:last-child {
+      padding-bottom: 24px;
+    }
+  }
+}
+
+
+
+
+

@@ -24,8 +24,8 @@ export default function SelectAutocompleteComponent(props) {
 
     return (
         <div>
-            <div>{`value: ${value !== null ? `'${value}'` : 'null'}`}</div>
-            <div>{`inputValue: '${inputValue}'`}</div>
+           {/* <div>{`value: ${value !== null ? `'${value}'` : 'null'}`}</div>
+            <div>{`inputValue: '${inputValue}'`}</div>*/}
             <br />
             <Autocomplete
                 value={value}

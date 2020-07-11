@@ -6,6 +6,7 @@ import { Welcome } from './pages/Welcome/Welcome';
 import { Welcome2 } from './pages/Welcome2/Welcome2';
 import { Rates } from './pages/Rates/Rates';
 import { Login } from './pages/Login/Login';
+import BottomNav from './shared/components/BottomNavbarComponent/BottomNav';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path="/">
           <Start/>
+        </Route>
+        <Route path="/">
+          <BottomNav/>
         </Route>
       </Switch>
     </Router>
