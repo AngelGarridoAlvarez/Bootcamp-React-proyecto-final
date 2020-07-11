@@ -1,5 +1,7 @@
 import React from 'react';
 import { TabComponent } from '../../modules/TabComponent/TabComponent';
+import { SocialLoginComponent } from '../../modules/SocialLoginComponent/SocialLoginComponent';
+import { Container } from '@material-ui/core';
 
 export function Register() {
   const tabs = [
@@ -8,6 +10,10 @@ export function Register() {
   ] 
 
   return (
-    <TabComponent tabs={tabs}/>
+    <Container maxWidth="lg">
+      <TabComponent tabs={tabs} />
+      <h1>Únete a Maleteo y disfruta de sus ventajas</h1>
+      <SocialLoginComponent />
+    </Container>
   )
 }

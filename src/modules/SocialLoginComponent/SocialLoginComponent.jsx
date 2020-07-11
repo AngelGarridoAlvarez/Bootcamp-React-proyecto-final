@@ -21,11 +21,17 @@ const useStyles = makeStyles((theme) => ({
   facebook: {
     color: '#fff',
     backgroundColor: '#38599c',
+    '&:hover': {
+      backgroundColor: '#38599c',
+    },
   },
   google: {
     color: '#000',
     backgroundColor: '#fff',
     border: '2px solid #6d6d6d',
+    '&:hover': {
+      backgroundColor: '#fff',
+    },
   },
   gridItem: {
     display: 'flex',
