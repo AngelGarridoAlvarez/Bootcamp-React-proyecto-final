@@ -4,7 +4,7 @@
 
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import "../../styles/blocks/material-ui/_material-ui-button.blocks.scss"
+import "./ButtonComponent.scss"
 
 
 export function ButtonComponent(props) {
