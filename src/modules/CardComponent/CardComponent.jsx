@@ -46,8 +46,7 @@ export function CardComponent({properties}) {
             </CardContent>
           </CardActionArea>
           <CardActions className="d-flex justify-content-center">
-            <ButtonComponent onClick={redirect} title={properties.textButton}>
-            </ButtonComponent>
+            <ButtonComponent onClick={redirect} title={properties.textButton} />
             <Link to={properties.routeRates}>{properties.link}</Link>
           </CardActions>
         </Card>
