@@ -39,7 +39,7 @@ export default function SelectAutocompleteComponent(props) {
                 id="controllable-states-demo"
                 options={props.options}
                 style={{ width: 300 }}
-                renderInput={(params) => <TextField {...params} label="Selecciona" variant="" />}
+                renderInput={(params) => <TextField {...params} label="Selecciona" variant="outlined" />}
             />
         </div>
     );

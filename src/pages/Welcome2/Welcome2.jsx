@@ -12,7 +12,7 @@ export function Welcome2() {
       text: 'Dispondrás de un precio fijo estés donde estés sin importar el tamaño o el peso.',
       textButton: 'Empezar Ya',
       link: 'Consulta los precios',
-      route: '/Rates'
+      route: '/Login'
     }
   ]
 

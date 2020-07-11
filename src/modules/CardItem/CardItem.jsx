@@ -50,7 +50,7 @@ export function CardItem(props) {
         <CardActions className="justify-content-center flex-column">
           <ButtonComponent onClick={redirect} title={props.textButton}>
           </ButtonComponent>
-          <Link className ="linkText">{props.link}</Link>
+          <Link to="/rates" className ="linkText">{props.link}</Link>
         </CardActions>
       </Card>
       </div>
