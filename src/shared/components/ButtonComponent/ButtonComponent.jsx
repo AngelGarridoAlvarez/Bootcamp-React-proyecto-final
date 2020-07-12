@@ -11,7 +11,7 @@ export function ButtonComponent(props) {
 
     return (
         <div>
-            <Button onClick={props.onClick} className= { props.className && "b-material-ui-button"} variant="contained">{props.title}</Button>
+            <Button onClick={props.onClick} className={`b-material-ui-button ${props.className}`} variant="contained">{props.title}</Button>
         </div>
     );
 }

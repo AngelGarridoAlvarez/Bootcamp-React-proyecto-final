@@ -48,7 +48,7 @@ export function CardItem(props) {
           </CardContent>
         </CardActionArea>
         <CardActions className="justify-content-center flex-column">
-          <ButtonComponent onClick={redirect} title={props.textButton}>
+          <ButtonComponent className= "toTheBottom" onClick={redirect} title={props.textButton}>
           </ButtonComponent>
           <Link to="/rates" className ="linkText">{props.link}</Link>
         </CardActions>
