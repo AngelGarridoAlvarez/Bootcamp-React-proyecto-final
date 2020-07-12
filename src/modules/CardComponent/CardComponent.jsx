@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { ButtonComponent } from '../../shared/components/ButtonComponent';
+import { ButtonComponent } from '../../shared/components/ButtonComponent/ButtonComponent';
 import { Link, useHistory } from "react-router-dom";
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -8,7 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import '../../styles/blocks/material-ui/_material-ui-button.blocks.scss';
+import '../../shared/components/ButtonComponent/ButtonComponent.scss';
 import '../../styles/start&welcome.scss'
 
 const useStyles = makeStyles({

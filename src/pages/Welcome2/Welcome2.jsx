@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardComponent } from "../../modules/Card/CardComponent";
+import { CardComponent } from "../../modules/CardComponent/CardComponent";
 import '../../styles/start&welcome.scss';
 
 export function Welcome2() {
@@ -18,6 +18,6 @@ export function Welcome2() {
 
 
   return(
-    <CardComponent items={cardItems}/>
-  )
+  <CardComponent properties={cardProperties}/>
+)
 }
