@@ -1,5 +1,5 @@
 /* Podemos cambiar el texto del botón:
- <OrangeButtonComponent title = "Texto del botón"/>
+ <OrangeButtonComponent title="Texto del botón"/>
 */
 
 import React from 'react';
@@ -9,10 +9,8 @@ import "./ButtonComponent.scss"
 
 export function ButtonComponent(props) {
 
-    return (
-        <div>
-            <Button onClick={props.onClick} className={`b-material-ui-button ${props.className}`} variant="contained">{props.title}</Button>
-        </div>
-    );
+	return (
+		<Button onClick={props.onClick} className={`b-material-ui-button ${props.className}`} variant="contained">{props.title}</Button>
+	);
 }
 
