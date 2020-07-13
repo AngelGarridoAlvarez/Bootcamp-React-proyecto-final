@@ -3,6 +3,7 @@ import "../Rates/Rates.scss"
 import SelectAutocompleteComponent from "../../shared/components/SelectAutocompleteComponent/SelectAutocompleteComponent";
 import SimpleCardComponent from "../../shared/components/SimpleCardComponent/SimpleCardComponent";
 import BottomNavBarComponent from "../../shared/components/BottomNavbarComponent/BottomNav";
+//import GoBack from "../../shared/components/GoBackComponent/GoBackComponent";
 
 export function Rates() {
 
