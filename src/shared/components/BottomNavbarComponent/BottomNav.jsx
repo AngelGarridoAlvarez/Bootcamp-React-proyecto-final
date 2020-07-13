@@ -1,20 +1,9 @@
 import "./BottomNav.scss"
-import React, {Component} from 'react';
-import {Link, withRouter} from 'react-router-dom';
-import {makeStyles} from '@material-ui/core/styles';
+import React, { Component } from 'react';
+import { Link, withRouter } from 'react-router-dom';
+import { HomeIcon, SearchIcon, QuestionAnswerRoundedIcon, PersonIcon } from '@material-ui/icons';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-
-import HomeIcon from '@material-ui/icons/Home';
-import SearchIcon from '@material-ui/icons/Search';
-import QuestionAnswerRoundedIcon from '@material-ui/icons/QuestionAnswerRounded';
-import PersonIcon from '@material-ui/icons/Person';
-
-const useStyles = makeStyles({
-    root: {
-        width: 700,
-    },
-});
 
 class BottomNav extends Component {
     state = {
@@ -40,7 +29,7 @@ class BottomNav extends Component {
         }
     }
 
-    handleChange = (event, value) => {
+    handleChange = (value) => {
         this.setState({value});
     };
 
