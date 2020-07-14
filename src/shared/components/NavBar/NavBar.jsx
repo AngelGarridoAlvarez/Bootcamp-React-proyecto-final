@@ -1,4 +1,4 @@
-import "./BottomNav.scss"
+import "./NavBar.scss"
 import React, {Component} from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import {makeStyles} from '@material-ui/core/styles';
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     },
 });
 
-class BottomNav extends Component {
+class NavBar extends Component {
     state = {
         value: 0,
         pathMap: [
@@ -63,4 +63,4 @@ class BottomNav extends Component {
         );
     }
 }
-export default withRouter (BottomNav);
+export default withRouter (NavBar);

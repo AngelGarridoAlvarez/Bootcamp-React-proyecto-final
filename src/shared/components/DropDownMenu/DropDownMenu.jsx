@@ -11,14 +11,14 @@ export function Rates() {
   const options = ['Europa', 'Norteamérica', 'Sudamérica', 'Asia', 'Oceanía', 'Africa', 'Albacete'];
 
   return (
-      <SelectAutocompleteComponent options={options}/>
+      <DropDownMenu options={options}/>
   )
 }
 
  */
 
 
-export default function SelectAutocompleteComponent(props) {
+export default function DropDownMenu(props) {
     const [value, setValue] = React.useState(props.options[0]);
     const [inputValue, setInputValue] = React.useState('');
 
