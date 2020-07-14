@@ -6,7 +6,7 @@ import {Welcome} from './pages/Welcome/Welcome';
 import {Welcome2} from './pages/Welcome2/Welcome2';
 import {Rates} from './pages/Rates/Rates';
 import {Login} from './pages/Login/Login';
-import BottomNav from './shared/components/BottomNavbarComponent/BottomNav';
+import BottomNav from './shared/components/NavBar/NavBar';
 import {Register} from './pages/Register/Register';
 
 function App() {

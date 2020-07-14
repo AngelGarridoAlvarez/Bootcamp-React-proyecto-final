@@ -1,14 +1,22 @@
-import "./BottomNav.scss"
-import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import "./NavBar.scss"
+import React, {Component} from 'react';
+import {Link, withRouter} from 'react-router-dom';
+import {makeStyles} from '@material-ui/core/styles';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+
 import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import QuestionAnswerRoundedIcon from '@material-ui/icons/QuestionAnswerRounded';
 import PersonIcon from '@material-ui/icons/Person';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
-class BottomNav extends Component {
+const useStyles = makeStyles({
+    root: {
+        width: 700,
+    },
+});
+
+class NavBar extends Component {
     state = {
         value: 0,
         pathMap: [
@@ -32,7 +40,7 @@ class BottomNav extends Component {
         }
     }
 
-    handleChange = (value) => {
+    handleChange = (event, value) => {
         this.setState({value});
     };
 
@@ -55,4 +63,4 @@ class BottomNav extends Component {
         );
     }
 }
-export default withRouter (BottomNav);
+export default withRouter (NavBar);
