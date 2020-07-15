@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { TabComponent } from '../../modules/TabComponent/TabComponent';
 import { SocialLoginComponent } from '../../modules/SocialLoginComponent/SocialLoginComponent';
 import { Container } from '@material-ui/core';
@@ -26,15 +26,11 @@ export function Register() {
       id: 1
     }).then(function(resp) {
       if (resp === 200 || resp === 201) {
-        useEffect(() => {
-          history.push('/home');
-        })
+        history.push('/home');
       };
     }).catch(function(err) {
       console.log(err);
-      useEffect(() => {
-        history.push('/register');
-      })
+      history.push('/register');
     })
   }
 

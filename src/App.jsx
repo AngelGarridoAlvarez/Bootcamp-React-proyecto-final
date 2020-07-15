@@ -1,20 +1,20 @@
 import React from 'react';
 import './App.scss';
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import {Start} from './pages/Start/Start';
-import {Welcome} from './pages/Welcome/Welcome';
-import {Welcome2} from './pages/Welcome2/Welcome2';
-import {Rates} from './pages/Rates/Rates';
-import {Login} from './pages/Login/Login';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Start } from './pages/Start/Start';
+import { Welcome } from './pages/Welcome/Welcome';
+import { Welcome2 } from './pages/Welcome2/Welcome2';
+import { Rates } from './pages/Rates/Rates';
+import { Login } from './pages/Login/Login';
 import BottomNav from './shared/components/NavBar/NavBar';
-import {Register} from './pages/Register/Register';
-import {Home} from './pages/Home/Home'
+import { Register } from './pages/Register/Register';
+import { Home } from './pages/Home/Home'
 
 function App() {
     return (
         <Router>
             <Switch>
-                <Route path="/Home">
+                <Route path="/home">
                     <Home/>
                 </Route>
                 <Route path="/register">
