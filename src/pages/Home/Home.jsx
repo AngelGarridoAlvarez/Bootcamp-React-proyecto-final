@@ -6,8 +6,9 @@ import DepositInput from "../../shared/components/DateTime/DateTime";
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import {ButtonComponent} from "../../shared/components/Button/ButtonComponent";
-import {CasesNumber} from "../../shared/components/CasesNumber/CasesNumber"
+import { ButtonComponent } from "../../shared/components/Button/ButtonComponent";
+import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber"
+import { DemoCarousel } from "../../shared/components/Carousel/Carousel"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -42,7 +43,7 @@ export function Home() {
             <Grid item xs={6}>
                 <ButtonComponent title={"Buscar"}/>
             </Grid>
-            <BottomNav/>
+            <DemoCarousel/>
         </Grid>
 
 
