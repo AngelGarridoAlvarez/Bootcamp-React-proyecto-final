@@ -8,11 +8,15 @@ import {Rates} from './pages/Rates/Rates';
 import {Login} from './pages/Login/Login';
 import BottomNav from './shared/components/NavBar/NavBar';
 import {Register} from './pages/Register/Register';
+import {Home} from './pages/Home/Home'
 
 function App() {
     return (
         <Router>
             <Switch>
+                <Route path="/Home">
+                    <Home/>
+                </Route>
                 <Route path="/register">
                     <Register/>
                 </Route>
