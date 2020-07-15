@@ -1,7 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 
-
 export function RegisterForm({ fnSendData }) {
 
   const { register, handleSubmit } = useForm();

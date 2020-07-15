@@ -16,7 +16,7 @@ export function Register() {
   const history = useHistory();
 
   const sendData = data => {
-    axios.post(environment.url + '/home', {
+    axios.post(environment.url + '/users', {
       email: data.email,
       password: data.password,
       name: data.name,
@@ -25,9 +25,8 @@ export function Register() {
       marketing: data.marketing,
       id: 1
     }).then(function(resp) {
-      if (resp === 200 || resp === 201) {
-        history.push('/home');
-      };
+      console.log(resp);
+      history.push('/home');
     }).catch(function(err) {
       console.log(err);
       history.push('/register');
