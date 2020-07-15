@@ -1,10 +1,13 @@
-import "./DepositInput.scss"
+import "./DateTime.scss"
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
+import TextField from '@material-ui/core/TextField';
 import IconButton from '@material-ui/core/IconButton';
 import EventNoteIcon from '@material-ui/icons/EventNote';
+import Icon from "@material-ui/core/Icon";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,15 +24,39 @@ const useStyles = makeStyles((theme) => ({
         padding: 0,
         color: 'orange',
     },
+    container: {
+        display: 'flex',
+        flexWrap: 'wrap',
+    },
+    textField: {
+        marginLeft: theme.spacing(1),
+        marginRight: theme.spacing(1),
+        width: 200,
+    },
 
 }));
 
-export default function CustomizedInputBase() {
+export default function CustomizedInputBase(props) {
     const classes = useStyles();
 
     return (
+        <form className={classes.container} noValidate>
+            <TextField
+                id="datetime-local"
+                label={props.text}
+                type="datetime-local"
+                defaultValue="2017-05-24T10:30"
+                className={classes.textField}
+                InputLabelProps={{
+                    shrink: true,
+                }}
+
+            />
+        </form>
+
+        /*
         <Paper component="form" className={classes.root}>
-            <IconButton type="date" className={classes.iconButton} aria-label="date">
+            <IconButton type="datetime-local" className={classes.iconButton} aria-label="date">
                 <EventNoteIcon/>
             </IconButton>
             <InputBase
@@ -38,5 +65,6 @@ export default function CustomizedInputBase() {
                 inputProps={{ 'aria-label': 'search google maps' }}
             />
         </Paper>
+         */
     );
 }
