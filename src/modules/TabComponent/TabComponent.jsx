@@ -14,11 +14,11 @@ export function TabComponent({ tabs }) {
 
   const selectedTab = tabs.findIndex(element => element.selected)
   const classes = useStyles();
-  const [value, setValue] = useState(selectedTab);
-
+  
   const handleChange = (_event, newValue) => {
     setValue(newValue);
   };
+  const [value, setValue] = useState(selectedTab);
 
   const StyledTabs = withStyles({
     flexContainer: {
