@@ -6,6 +6,7 @@ import DepositInput from "../../shared/components/DateTime/DateTime";
 import Grid from '@material-ui/core/Grid';
 import { ButtonComponent } from "../../shared/components/Button/ButtonComponent";
 import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber"
+import { DemoCarousel } from "../../shared/components/Carousel/Carousel"
 
 export function Home() {
 
@@ -29,7 +30,8 @@ export function Home() {
             <Grid item xs={6}>
                 <ButtonComponent title={"Buscar"} />
             </Grid>
-            <BottomNav />
+            <DemoCarousel/>
+            <BottomNav/>
         </Grid>
 
 
