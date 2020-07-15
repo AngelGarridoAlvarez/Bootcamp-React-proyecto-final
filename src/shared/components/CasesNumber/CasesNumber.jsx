@@ -29,14 +29,9 @@ export function CasesNumber() {
 
     return (
         <Paper component="form" className={classes.root}>
-            <IconButton type="submit" className={classes.iconButton} aria-label="search">
+            <IconButton type="number" className={classes.iconButton} aria-label="search">
                 <BusinessCenterIcon/>
             </IconButton>
-            <InputBase
-                className={classes.input}
-                placeholder="Número de bultos"
-                inputProps={{ 'aria-label': 'search google maps' }}
-            />
         </Paper>
     );
 }
