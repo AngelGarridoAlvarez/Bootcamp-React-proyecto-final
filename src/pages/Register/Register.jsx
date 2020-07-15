@@ -31,7 +31,10 @@ export function Register() {
         })
       };
     }).catch(function(err) {
-        console.log(err);
+      console.log(err);
+      useEffect(() => {
+        history.push('/register');
+      })
     })
   }
 
