@@ -13,10 +13,10 @@ class NavBar extends Component {
     state = {
         value: 0,
         pathMap: [
-            '/Home',
-            '/Search',
-            '/Chat',
-            '/Profile',
+            '/home',
+            '/search',
+            '/chat',
+            '/profile',
         ]
     };
 

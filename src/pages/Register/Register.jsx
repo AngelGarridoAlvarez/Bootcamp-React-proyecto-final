@@ -4,10 +4,11 @@ import { SocialLoginComponent } from '../../modules/SocialLoginComponent/SocialL
 import { Container } from '@material-ui/core';
 import { environment } from '../../shared/environment/environment';
 import { RegisterForm } from '../../modules/RegisterForm/RegisterForm';
-import axios from "axios";
 import { useHistory } from 'react-router';
+import axios from "axios";
 
 export function Register() {
+
   const tabs = [
     { label: 'Iniciar sesión', link: '/login', selected: true },
     { label: 'Regístrate', link: '/register' }
