@@ -33,7 +33,7 @@ export function RegisterForm({ fnSendData }) {
         <input name="marketing" type="checkbox" ref={register} autoComplete="on" />
         <label htmlFor="marketing">Quiero recibir consejos sobre como gestionar mi equipaje, ofertas, novedades y otros correos electrónicos de Maleteo</label>
       </div>
-      <ButtonComponent type="submit" title={'Registrarse'}/>
+      <ButtonComponent type={"submit"} title={"Registrarse"}/>
     </form>
   )
 }
