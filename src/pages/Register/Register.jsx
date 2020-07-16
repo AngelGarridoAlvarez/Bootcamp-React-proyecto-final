@@ -17,14 +17,17 @@ export function Register() {
   const history = useHistory();
 
   const sendData = data => {
-    axios.post(environment.url + '/users', {
+    axios.post(environment.url + '/register', {
       email: data.email,
       password: data.password,
       name: data.name,
       surname: data.email,
       dateOfBirth: data.dateOfBirth,
-      marketing: data.marketing,
-      id: 1
+      marketing: data.marketing
+    }, {
+      headers: {
+        'Content-Type':'multipart/form-data',
+      }
     }).then(function(resp) {
       console.log(resp);
       history.push('/home');

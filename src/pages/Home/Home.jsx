@@ -10,30 +10,30 @@ import { Container } from '@material-ui/core';
 
 export function Home() {
 
-    return (
-        <Container maxWidth="lg">
-            <Grid container spacing={3}>
-                <Grid item xs={12}>
-                    <h2 className="Search">Encuentra tu guardián</h2>
-                </Grid>
-                <Grid item xs={12}>
-                    <SearchInput />
-                </Grid>
-                <Grid item xs={6}>
-                    <DepositInput text="Depósito" />
-                </Grid>
-                <Grid item xs={6}>
-                    <DepositInput text="Retirada" />
-                </Grid>
-                <Grid item xs={6}>
-                    <CasesNumber />
-                </Grid>
-                <Grid item xs={6}>
-                    <ButtonComponent title={"Buscar"} />
-                </Grid>
-                <BottomNav />
-            </Grid>
-        </Container>
-    )
+	return (
+		<Container maxWidth="lg">
+			<Grid container spacing={3}>
+				<Grid item xs={12}>
+					<h2 className="Search">Encuentra tu guardián</h2>
+				</Grid>
+				<Grid item xs={12}>
+					<SearchInput />
+				</Grid>
+				<Grid item xs={6}>
+					<DepositInput text="Depósito" />
+				</Grid>
+				<Grid item xs={6}>
+					<DepositInput text="Retirada" />
+				</Grid>
+				<Grid item xs={6}>
+					<CasesNumber />
+				</Grid>
+				<Grid item xs={6}>
+					<ButtonComponent title={"Buscar"} />
+				</Grid>
+				<BottomNav />
+			</Grid>
+		</Container>
+	)
 
 }
