@@ -1,12 +1,12 @@
-import "./Home.scss"
 import React from 'react';
+import { ButtonComponent } from "../../shared/components/Button/ButtonComponent";
+import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber";
+import { Container } from '@material-ui/core';
 import BottomNav from "../../shared/components/NavBar/NavBar";
 import SearchInput from "../../shared/components/SearchInput/SearchInput";
 import DepositInput from "../../shared/components/DateTime/DateTime";
 import Grid from '@material-ui/core/Grid';
-import { ButtonComponent } from "../../shared/components/Button/ButtonComponent";
-import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber";
-import { Container } from '@material-ui/core';
+import "./Home.scss"
 
 export function Home() {
 

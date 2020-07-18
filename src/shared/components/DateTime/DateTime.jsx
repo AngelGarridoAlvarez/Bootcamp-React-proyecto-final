@@ -1,28 +1,33 @@
-import "./DateTime.scss"
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { TextField } from "@material-ui/core";
+import "./DateTime.scss"
 
 const useStyles = makeStyles((theme) => ({
-    root: {
+    root:
+    {
         padding: '4px 4px',
         display: 'flex',
         alignItems: 'center',
         width: '42vh',
     },
-    input: {
+    input:
+    {
         marginLeft: theme.spacing(1),
         flex: 1,
     },
-    iconButton: {
+    iconButton:
+    {
         padding: 0,
         color: 'orange',
     },
-    container: {
+    container:
+    {
         display: 'flex',
         flexWrap: 'wrap',
     },
-    textField: {
+    textField:
+    {
         marginLeft: theme.spacing(1),
         marginRight: theme.spacing(1),
         width: 200,

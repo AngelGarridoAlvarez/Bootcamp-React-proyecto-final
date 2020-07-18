@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.scss';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Start } from './pages/Start/Start';
 import { Welcome } from './pages/Welcome/Welcome';
@@ -9,11 +8,16 @@ import { Login } from './pages/Login/Login';
 import BottomNav from './shared/components/NavBar/NavBar';
 import { Register } from './pages/Register/Register';
 import { Home } from './pages/Home/Home'
+import { Location } from './pages/Location/Location';
+import './App.scss';
 
 function App() {
     return (
         <Router>
             <Switch>
+                <Route path="/location">
+                    <Location />
+                </Route>
                 <Route path="/home">
                     <Home />
                 </Route>
