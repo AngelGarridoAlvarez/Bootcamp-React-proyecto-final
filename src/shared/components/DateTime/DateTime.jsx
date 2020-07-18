@@ -35,17 +35,9 @@ export default function CustomizedInputBase(props) {
 
     return (
         <form className={classes.container} noValidate>
-            <TextField
-                id="datetime-local"
-                label={props.text}
-                type="datetime-local"
-                defaultValue="2017-05-24T10:30"
-                className={classes.textField}
-                InputLabelProps={{
-                    shrink: true,
-                }}
-
-            />
+            <input type="datetime-local" id="meeting-time"
+                   name="meeting-time" value="2018-06-12T19:30"
+                   min="2018-06-07T00:00" max="2018-06-14T00:00"/>
         </form>
 
         /*

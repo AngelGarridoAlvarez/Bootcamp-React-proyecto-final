@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import IconButton from '@material-ui/core/IconButton';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
+import InputBase from "@material-ui/core/InputBase";
 const useStyles = makeStyles((theme) => ({
     root: {
         padding: '4px 4px',
@@ -13,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     },
     input: {
         marginLeft: theme.spacing(1),
-        margin: theme.spacing(2),
+        margin: theme.spacing(0),
         flex: 1,
     },
     iconButton: {
@@ -31,6 +32,11 @@ export function CasesNumber() {
             <IconButton type="number" className={classes.iconButton} aria-label="search">
                 <BusinessCenterIcon/>
             </IconButton>
+            <InputBase
+                className={classes.input}
+                placeholder="Número de bultos"
+                inputProps={{ 'number': 'number' }}
+            />
         </Paper>
     );
 }
