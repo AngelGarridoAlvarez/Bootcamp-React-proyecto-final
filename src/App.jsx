@@ -15,28 +15,28 @@ function App() {
         <Router>
             <Switch>
                 <Route path="/home">
-                    <Home/>
+                    <Home />
                 </Route>
                 <Route path="/register">
-                    <Register/>
+                    <Register />
                 </Route>
                 <Route path="/rates">
-                    <Rates/>
+                    <Rates />
                 </Route>
                 <Route path="/login">
-                    <Login/>
+                    <Login />
                 </Route>
                 <Route path="/welcome">
-                    <Welcome/>
+                    <Welcome />
                 </Route>
                 <Route path="/welcome2">
-                    <Welcome2/>
+                    <Welcome2 />
                 </Route>
                 <Route path="/">
-                    <Start/>
+                    <Start />
                 </Route>
                 <Route path="/">
-                    <BottomNav/>
+                    <BottomNav />
                 </Route>
             </Switch>
         </Router>

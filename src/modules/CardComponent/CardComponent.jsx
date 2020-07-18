@@ -21,8 +21,8 @@ const useStyles = makeStyles({
 });
 
 
-export function CardComponent({properties}) {
-  
+export function CardComponent({ properties }) {
+
   const classes = useStyles();
   const history = useHistory();
   const redirect = () => {

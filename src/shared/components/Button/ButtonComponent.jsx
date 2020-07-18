@@ -10,7 +10,7 @@ import "./ButtonComponent.scss"
 export function ButtonComponent(props) {
 
 	return (
-		<Button onClick={props.onClick} className={`b-material-ui-button ${props.className}`} variant="contained">{props.title}</Button>
+		<Button type={props.type} onClick={props.onClick} className={`b-material-ui-button ${props.className}`} variant="contained">{props.title}</Button>
 	);
 }
 

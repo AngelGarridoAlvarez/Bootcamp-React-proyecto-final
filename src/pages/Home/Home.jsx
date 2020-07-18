@@ -5,12 +5,14 @@ import SearchInput from "../../shared/components/SearchInput/SearchInput";
 import DepositInput from "../../shared/components/DateTime/DateTime";
 import Grid from '@material-ui/core/Grid';
 import { ButtonComponent } from "../../shared/components/Button/ButtonComponent";
-import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber"
-import { DemoCarousel } from "../../shared/components/Carousel/Carousel"
+import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber";
+import { DemoCarousel } from "../../shared/components/Carousel/Carousel";
+import { Container } from '@material-ui/core';
 
 export function Home() {
 
     return (
+        <Container maxWidth="lg">
         <Grid container spacing={3}>
             <Grid item xs={12}>
                 <h2 className="Search">Encuentra tu guardián</h2>
@@ -31,9 +33,9 @@ export function Home() {
                 <ButtonComponent title={"Buscar"} />
             </Grid>
             <DemoCarousel/>
-            <BottomNav/>
+            <BottomNav />
         </Grid>
-
+        </Container>
 
     )
 

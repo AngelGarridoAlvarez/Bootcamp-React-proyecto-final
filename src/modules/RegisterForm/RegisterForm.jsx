@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-
+import { ButtonComponent } from '../../shared/components/Button/ButtonComponent';
 
 export function RegisterForm({ fnSendData }) {
 
@@ -9,31 +9,31 @@ export function RegisterForm({ fnSendData }) {
   
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="email">
-        Dirección de correo electrónico
-        <input name="email" type="email" ref={register({ required: true })} autoComplete="on" />
-      </label>
-      <label htmlFor="name">
-        Nombre
-        <input name="name" type="text" ref={register({ required: true })} autoComplete="on" />
-      </label>
-      <label htmlFor="surname">
-        Apellidos
-        <input name="surname" type="text" ref={register({ required: true })} autoComplete="on" />
-      </label>
-      <label htmlFor="password">
-        Contraseña
-        <input name="password" type="password" ref={register({ required: true })} autoComplete="on" />
-      </label>
-      <label htmlFor="dateOfBirth">
-        Fecha de nacimiento
+      <label htmlFor="email">Dirección de correo electrónico</label>
+      <div>
+        <input name="email" type="email" ref={register({ required: true })} autoComplete="on" defaultValue={'carlosrodriguez@gmail.com'} />
+      </div>
+      <label htmlFor="name">Nombre</label>
+      <div>
+        <input name="name" type="text" ref={register({ required: true })} autoComplete="on" defaultValue={'Carlos'} />
+      </div>
+      <label htmlFor="surname">Apellidos</label>
+      <div>
+        <input name="surname" type="text" ref={register({ required: true })} autoComplete="on" defaultValue={'Rodriguez'} />
+      </div>  
+      <label htmlFor="password">Contraseña</label>
+      <div>
+        <input name="password" type="password" ref={register({ required: true })} autoComplete="on" defaultValue={'***************'} />
+      </div>
+      <label htmlFor="dateOfBirth">Fecha de nacimiento</label>
+      <div>
         <input name="dateOfBirth" type="date" ref={register({ required: true })} autoComplete="on" />
-      </label>
-      <label htmlFor="marketing">
-        Quiero recibir consejos sobre como gestionar mi equipaje, ofertas, novedades y otros correos electrónicos de Maleteo
+      </div>
+      <div>
         <input name="marketing" type="checkbox" ref={register} autoComplete="on" />
-      </label>
-      <input type="submit" />
+        <label htmlFor="marketing">Quiero recibir consejos sobre como gestionar mi equipaje, ofertas, novedades y otros correos electrónicos de Maleteo</label>
+      </div>
+      <ButtonComponent type={"submit"} title={"Registrarse"}/>
     </form>
   )
 }
