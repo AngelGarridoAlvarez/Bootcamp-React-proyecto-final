@@ -17,17 +17,20 @@ export function Login() {
   const history = useHistory();
 
   const sendData = data => {
-    console.log(data);
     axios.post(environment.url + '/login', {
       email: data.email,
       password: data.password
     }, {
       headers: {
-        'Content-Type': 'multipart/form-data',
+        'Content-Type': 'application/json',
       }
     }).then(function (resp) {
       console.log(resp);
-      history.push('/home');
+      const token = resp.data.token;
+      if (resp.status === 200) {
+        localStorage.setItem("userToken", token);
+        history.push('/home');
+      }
     }).catch(function (err) {
       console.log(err);
       history.push('/login');

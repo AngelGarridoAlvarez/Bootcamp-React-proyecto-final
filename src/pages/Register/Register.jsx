@@ -21,16 +21,16 @@ export function Register() {
       email: data.email,
       password: data.password,
       name: data.name,
-      surname: data.email,
+      surname: data.surname,
       dateOfBirth: data.dateOfBirth,
       marketing: data.marketing
     }, {
       headers: {
-        'Content-Type':'multipart/form-data',
+        'Content-Type':'application/json',
       }
     }).then(function(resp) {
       console.log(resp);
-      history.push('/home');
+      history.push('/login');
     }).catch(function(err) {
       console.log(err);
       history.push('/register');

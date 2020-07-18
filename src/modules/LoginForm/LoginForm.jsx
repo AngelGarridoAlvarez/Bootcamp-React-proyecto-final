@@ -2,7 +2,6 @@ import React from 'react';
 import { useForm } from "react-hook-form";
 import { ButtonComponent } from '../../shared/components/Button/ButtonComponent';
 
-
 export function LoginForm({ fnSendData }) {
 
   const { register, handleSubmit } = useForm();
