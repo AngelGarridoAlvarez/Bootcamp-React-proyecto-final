@@ -27,11 +27,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function CustomizedInputBase() {
+
 	const classes = useStyles();
 	const history = useHistory();
 
 	const searchLocation = () => {
-		history.push('/location')
+		history.push('/location');
 	}
 
 	return (
