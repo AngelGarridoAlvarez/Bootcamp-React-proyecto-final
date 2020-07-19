@@ -8,11 +8,13 @@ import { ButtonComponent } from "../../shared/components/Button/ButtonComponent"
 import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber";
 import { DemoCarousel } from "../../shared/components/Carousel/Carousel";
 import { Container } from '@material-ui/core';
+import GoBackIcon from "../../shared/components/GoBackIcon/GoBackIcon";
 
 export function Home() {
 
     return (
         <Container maxWidth="lg">
+            <GoBackIcon/>
         <Grid container spacing={3}>
             <Grid item xs={12}>
                 <h2 className="Search">Encuentra tu guardián</h2>

@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
+import { useHistory } from "react-router";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -27,6 +28,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function CustomizedInputBase() {
     const classes = useStyles();
+    const history = useHistory();
+    const searchLocation = () => {
+       history.push('/location')
+   }
 
     return (
         <Paper component="form" className={classes.root}>
@@ -37,6 +42,7 @@ export default function CustomizedInputBase() {
                 className={classes.input}
                 placeholder="¿Dónde te encuentras? Jerez de la Frontera"
                 inputProps={{ 'aria-label': 'search google maps' }}
+                onClick={ searchLocation}
             />
         </Paper>
     );

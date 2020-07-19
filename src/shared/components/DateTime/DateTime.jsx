@@ -1,11 +1,12 @@
 import "./DateTime.scss"
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { TextField } from "@material-ui/core";
+import { TextField } from '@material-ui/core/';
+import InputBase from "@material-ui/core/InputBase";
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: '4px 4px',
+        padding: '1px 1px',
         display: 'flex',
         alignItems: 'center',
         width: '42vh',
@@ -30,27 +31,33 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
+
+
+
 export default function CustomizedInputBase(props) {
     const classes = useStyles();
 
+
+    let curr = new Date();
+    curr.setDate(curr.getDate() + 0);
+    let date = curr.toISOString().substr(0,16);
     return (
         <form className={classes.container} noValidate>
-            <input type="datetime-local" id="meeting-time"
-                   name="meeting-time" value="2018-06-12T19:30"
-                   min="2018-06-07T00:00" max="2018-06-14T00:00"/>
-        </form>
-
-        /*
-        <Paper component="form" className={classes.root}>
-            <IconButton type="datetime-local" className={classes.iconButton} aria-label="date">
-                <EventNoteIcon/>
-            </IconButton>
-            <InputBase
-                className={classes.input}
-                placeholder="Depósito"
-                inputProps={{ 'aria-label': 'search google maps' }}
+            <TextField id="dateRequired"
+                   type="datetime-local"
+                   name="dateRequired"
+                        inputProps={{min:date, defaultValue: date}}
+                   label={props.text}
             />
-        </Paper>
-         */
+        </form>
     );
 }
+
+/*
+* return (
+        <form className={classes.container} noValidate>
+            <TextField
+                id="datetime-local"
+                label={props.text}
+                type="datetime-local"
+* */
