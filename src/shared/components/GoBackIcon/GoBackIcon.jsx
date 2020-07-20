@@ -1,20 +1,15 @@
-import React, {Component} from 'react';
-import {withRouter} from "react-router-dom";
+import React from 'react';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import { useHistory } from 'react-router';
 
+export default function GoBackIcon() {
 
-    class GoBackIcon extends Component {
-    static contextTypes = {
-        router: () => true, // replace with PropTypes.object if you use them
-    }
+	const history = useHistory();
+	const goBack = () => {
+		history.goBack();
+	}
 
-    render() {
-        return (
-            <ArrowBackIosIcon className="GoBackIcon" onClick={this.props.history.goBack}/>
-        )
-    }
+	return (
+		<ArrowBackIosIcon className="GoBackIcon" onClick={goBack} />
+	)
 }
-
-
-
-export default withRouter (GoBackIcon);

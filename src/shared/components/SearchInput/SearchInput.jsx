@@ -8,30 +8,32 @@ import SearchIcon from '@material-ui/icons/Search';
 import { useHistory } from "react-router";
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        padding: '4px 4px',
-        display: 'flex',
-        alignItems: 'center',
-        width: '85vh',
-    },
-    input: {
-        marginLeft: theme.spacing(1),
-        margin: theme.spacing(2),
-        flex: 1,
-    },
-    iconButton: {
-        padding: 0,
-        color: 'orange',
-    },
+	root: {
+		padding: '4px 4px',
+		display: 'flex',
+		alignItems: 'center',
+		width: '85vh',
+	},
+	input: {
+		marginLeft: theme.spacing(1),
+		margin: theme.spacing(2),
+		flex: 1,
+	},
+	iconButton: {
+		padding: 0,
+		color: 'orange',
+	},
 
 }));
 
 export default function CustomizedInputBase() {
-    const classes = useStyles();
-    const history = useHistory();
-    const searchLocation = () => {
-       history.push('/location')
-   }
+
+	const classes = useStyles();
+	const history = useHistory();
+
+	const searchLocation = () => {
+		history.push('/location');
+	}
 
     return (
         <Paper component="form" className={classes.root}>
@@ -42,8 +44,8 @@ export default function CustomizedInputBase() {
                 className={classes.input}
                 placeholder="¿Dónde te encuentras? Jerez de la Frontera"
                 inputProps={{ 'aria-label': 'search google maps' }}
-                onClick={ searchLocation}
-            />
+				onClick={searchLocation}
+			/>
         </Paper>
     );
 }

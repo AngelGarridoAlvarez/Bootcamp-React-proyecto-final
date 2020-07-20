@@ -1,4 +1,3 @@
-import "./Home.scss"
 import React from 'react';
 import BottomNav from "../../shared/components/NavBar/NavBar";
 import SearchInput from "../../shared/components/SearchInput/SearchInput";
@@ -9,6 +8,7 @@ import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber";
 import { DemoCarousel } from "../../shared/components/Carousel/Carousel";
 import { Container } from '@material-ui/core';
 import GoBackIcon from "../../shared/components/GoBackIcon/GoBackIcon";
+import "./Home.scss"
 
 export function Home() {
 
