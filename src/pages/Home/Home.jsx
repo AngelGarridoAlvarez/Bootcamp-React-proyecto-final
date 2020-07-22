@@ -10,7 +10,6 @@ import { Container } from '@material-ui/core';
 import GoBackIcon from "../../shared/components/GoBackIcon/GoBackIcon";
 import SearchIcon from '@material-ui/icons/Search';
 import NextIcon from "../../shared/components/NextIcon/NextIcon";
-
 import "./Home.scss"
 
 export function Home() {

@@ -36,17 +36,17 @@ export default function SearchInput(props) {
 		history.push('/location');
 	}
 
-    return (
-        <Paper component="form" className={classes.root}>
-            <IconButton type="submit" className={classes.iconButton} aria-label="search">
-                {props.icon}
-            </IconButton>
-            <InputBase
-                className={classes.input}
-                placeholder="¿Dónde te encuentras? Jerez de la Frontera"
-                inputProps={{ 'aria-label': 'search google maps' }}
+	return (
+		<Paper component="form" className={props.className}>
+			<IconButton type="submit" className={classes.iconButton} aria-label="search">
+				<SearchIcon />
+			</IconButton>
+			<InputBase
+				className={classes.input}
+				placeholder="¿Dónde te encuentras? Jerez de la Frontera"
+				inputProps={{ 'aria-label': 'search google maps' }}
 				onClick={searchLocation}
 			/>
-        </Paper>
-    );
+		</Paper>
+	);
 }

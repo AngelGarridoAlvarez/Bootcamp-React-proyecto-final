@@ -14,6 +14,7 @@ export function Location() {
       <Container maxWidth="lg">
         <GoBackIcon />
         <SearchInput icon={<LocationOnIcon/>}/>
+        <SearchInput />
         <img src="/assets/images/brujula@3x.png" alt="compass" /><span>Utilizar mi ubicación actual</span>
         <NavBar />
       </Container>
