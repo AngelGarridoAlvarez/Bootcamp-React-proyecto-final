@@ -1,11 +1,11 @@
-import "./SearchInput.scss"
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { useHistory } from "react-router";
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
-import { useHistory } from "react-router";
+import "./SearchInput.scss"
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function CustomizedInputBase() {
+export default function SearchInput(props) {
 
 	const classes = useStyles();
 	const history = useHistory();
@@ -36,7 +36,7 @@ export default function CustomizedInputBase() {
 	}
 
 	return (
-		<Paper component="form" className={classes.root}>
+		<Paper component="form" className={props.className}>
 			<IconButton type="submit" className={classes.iconButton} aria-label="search">
 				<SearchIcon />
 			</IconButton>

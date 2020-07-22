@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchInput from "../../shared/components/SearchInput/SearchInput";
-import NavBar from '../../shared/components/NavBar/NavBar';
 import GoBackIcon from '../../shared/components/GoBackIcon/GoBackIcon';
+import NavBar from '../../shared/components/NavBar/NavBar';
 import { Container } from '@material-ui/core';
 
 export function Location() {
