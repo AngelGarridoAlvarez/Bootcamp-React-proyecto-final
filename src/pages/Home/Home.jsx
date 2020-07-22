@@ -8,6 +8,9 @@ import { CasesNumber } from "../../shared/components/CasesNumber/CasesNumber";
 import { DemoCarousel } from "../../shared/components/Carousel/Carousel";
 import { Container } from '@material-ui/core';
 import GoBackIcon from "../../shared/components/GoBackIcon/GoBackIcon";
+import SearchIcon from '@material-ui/icons/Search';
+import NextIcon from "../../shared/components/NextIcon/NextIcon";
+
 import "./Home.scss"
 
 export function Home() {
@@ -16,11 +19,12 @@ export function Home() {
         <Container maxWidth="lg">
             <GoBackIcon/>
         <Grid container spacing={3}>
+
             <Grid item xs={12}>
                 <h2 className="Search">Encuentra tu guardián</h2>
             </Grid>
             <Grid item xs={12}>
-                <SearchInput />
+                <SearchInput icon={<SearchIcon/>}/>
             </Grid>
             <Grid item xs={6}>
                 <DepositInput text="Depósito" />
@@ -34,11 +38,14 @@ export function Home() {
             <Grid item xs={6}>
                 <ButtonComponent title={"Buscar"} />
             </Grid>
-            <DemoCarousel/>
-            <BottomNav />
+            <Grid item xs={12}>
+                <DemoCarousel/>
+            </Grid>
+            <NextIcon newRoute="/Login"/>
+
+
+            <BottomNav/>
         </Grid>
         </Container>
-
     )
-
 }
