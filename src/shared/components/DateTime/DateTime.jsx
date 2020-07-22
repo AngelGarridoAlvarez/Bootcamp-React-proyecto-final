@@ -2,7 +2,6 @@ import "./DateTime.scss"
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { TextField } from '@material-ui/core/';
-import InputBase from "@material-ui/core/InputBase";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -52,12 +51,3 @@ export default function CustomizedInputBase(props) {
         </form>
     );
 }
-
-/*
-* return (
-        <form className={classes.container} noValidate>
-            <TextField
-                id="datetime-local"
-                label={props.text}
-                type="datetime-local"
-* */
