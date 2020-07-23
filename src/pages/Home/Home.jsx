@@ -18,7 +18,6 @@ export function Home() {
         <Container maxWidth="lg">
             <GoBackIcon/>
         <Grid container spacing={3}>
-
             <Grid item xs={12}>
                 <h2 className="Search">Encuentra tu guardián</h2>
             </Grid>
@@ -46,5 +45,6 @@ export function Home() {
             <BottomNav/>
         </Grid>
         </Container>
+
     )
 }
