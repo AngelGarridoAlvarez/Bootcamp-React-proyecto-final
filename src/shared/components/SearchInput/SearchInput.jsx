@@ -10,18 +10,19 @@ import "./SearchInput.scss"
 
 const useStyles = makeStyles((theme) => ({
 	root: {
-		padding: '4px 4px',
+		padding: '2px 2px',
 		display: 'flex',
 		alignItems: 'center',
 		width: '85vh',
 	},
 	input: {
 		marginLeft: theme.spacing(1),
-		margin: theme.spacing(2),
+		margin: theme.spacing(0),
+		padding: 0,
 		flex: 1,
 	},
 	iconButton: {
-		padding: 0,
+		padding: 2,
 		color: 'orange',
 	},
 
