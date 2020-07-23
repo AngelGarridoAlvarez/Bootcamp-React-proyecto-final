@@ -5,6 +5,7 @@ import { Container } from '@material-ui/core';
 import { environment } from '../../shared/environment/environment';
 import { RegisterForm } from '../../modules/RegisterForm/RegisterForm';
 import { useHistory } from 'react-router';
+import GoBackIcon from "../../shared/components/GoBackIcon/GoBackIcon";
 import axios from "axios";
 
 export function Register() {
@@ -39,6 +40,7 @@ export function Register() {
 
   return (
     <Container maxWidth="lg">
+      <GoBackIcon/>
       <TabComponent tabs={tabs} />
       <h1>Únete a Maleteo y disfruta de sus ventajas</h1>
       <SocialLoginComponent />
