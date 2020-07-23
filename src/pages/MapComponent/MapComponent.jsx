@@ -3,7 +3,9 @@ import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
 import NavBar from '../../shared/components/NavBar/NavBar';
 import SearchInput from '../../shared/components/SearchInput/SearchInput';
 import GoBackIcon from '../../shared/components/GoBackIcon/GoBackIcon';
+import { environment } from '../../shared/environment/environment';
 import './MapComponent.scss';
+import axios from "axios";
 
 function Map() {
   return (
@@ -18,14 +20,11 @@ function Map() {
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export function MapComponent() {
-  // navigator.geolocation.getCurrentPosition(function (position) {
-  //   console.log(position);
-  //   var pos = {
-  //     lat: position.coords.latitude,
-  //     lng: position.coords.longitude
-  //   };
-  // })
 
+  axios.get(environment.url + '/locker/availableLockers', {
+    "Authorization":
+    "Bearer " + localStorage.getItem("userToken")
+  }).then(res => console.log(res));
 
   return (
     <div className={"c-map"} style={{ width: "100vw", height: "100vh" }}>
