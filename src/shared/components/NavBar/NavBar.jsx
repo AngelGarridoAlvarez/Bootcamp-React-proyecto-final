@@ -14,7 +14,7 @@ class NavBar extends Component {
         value: 0,
         pathMap: [
             '/home',
-            '/search',
+            '/location',
             '/chat',
             '/profile',
         ]
@@ -49,7 +49,7 @@ class NavBar extends Component {
                 className="BottomNav"
             >
                 <BottomNavigationAction label="" component={Link} to={pathMap[0]} value="home" icon={<HomeIcon style={{ fontSize: 40 }} />} />
-                <BottomNavigationAction label="" component={Link} to={pathMap[1]} value="favorites" icon={<SearchIcon style={{ fontSize: 40 }} />} />
+                <BottomNavigationAction label="" component={Link} to={pathMap[1]} value="location" icon={<SearchIcon style={{ fontSize: 40 }} />} />
                 <BottomNavigationAction label="" component={Link} to={pathMap[2]} value="nearby" icon={<QuestionAnswerRoundedIcon style={{ fontSize: 40 }} />} />
                 <BottomNavigationAction label="" component={Link} to={pathMap[3]} value="folder" icon={<PersonIcon style={{ fontSize: 40 }} />} />
             </BottomNavigation>

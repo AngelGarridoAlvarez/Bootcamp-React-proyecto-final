@@ -5,6 +5,7 @@ import { Container } from '@material-ui/core';
 import { LoginForm } from '../../modules/LoginForm/LoginForm';
 import { environment } from '../../shared/environment/environment';
 import { useHistory } from 'react-router';
+import GoBackIcon from "../../shared/components/GoBackIcon/GoBackIcon";
 import axios from "axios";
 
 export function Login() {
@@ -39,6 +40,7 @@ export function Login() {
 
   return (
     <Container maxWidth="lg">
+      <GoBackIcon/>
       <TabComponent tabs={tabs} />
       <h1>Inicia sesión ahora</h1>
       <SocialLoginComponent />
