@@ -10,7 +10,6 @@ import { Container } from '@material-ui/core';
 import GoBackIcon from "../../shared/components/GoBackIcon/GoBackIcon";
 import SearchIcon from '@material-ui/icons/Search';
 import NextIcon from "../../shared/components/NextIcon/NextIcon";
-
 import "./Home.scss"
 
 export function Home() {
@@ -19,7 +18,6 @@ export function Home() {
         <Container maxWidth="lg">
             <GoBackIcon/>
         <Grid container spacing={3}>
-
             <Grid item xs={12}>
                 <h2 className="Search">Encuentra tu guardián</h2>
             </Grid>
@@ -47,5 +45,6 @@ export function Home() {
             <BottomNav/>
         </Grid>
         </Container>
+
     )
 }
