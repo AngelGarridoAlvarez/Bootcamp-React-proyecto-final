@@ -5,7 +5,6 @@ import { useHistory } from "react-router";
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
-import "./SearchInput.scss"
 
 const useStyles = makeStyles((theme) => ({
 	root: {

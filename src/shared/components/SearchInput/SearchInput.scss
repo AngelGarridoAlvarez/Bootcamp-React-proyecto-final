@@ -1,22 +1,29 @@
-.MuiPaper-root {
-  color: rgba(0, 0, 0, 0.87);
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  /* background-color: #fff; */
-}
-
 .SearchInput {
   margin-top: 5%;
   margin-bottom: 5%;
   background-color: #00b3e1;
+
+  &.MuiPaper-root {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: rgb(220, 212, 212);
+
+    /* background-color: #fff; */
+
+  }
+
+  &.makeStyles-input-2 {
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+    width: 80%;
+
+  }
+
 }
 
-.MuiInputBase-colorSecondary {
-  background-color: #0001;
-}
 
-
-
-
+/*<div class="MuiInputBase-root MuiInputBase-colorSecondary makeStyles-input-25"><input placeholder="¿Dónde te encuentras? Jerez de la Frontera" type="text" aria-label="search google maps" class="MuiInputBase-input" value=""></div>
 /*element.style {
   align-content: center;
   .makeStyles-root-1 {

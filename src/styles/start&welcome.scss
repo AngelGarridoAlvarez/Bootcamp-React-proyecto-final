@@ -39,4 +39,28 @@
     }
   }
 
+
+
+
+
+
+}
+
+.ButtonLink{
+  &.MuiCardActions-root{
+    display: block;
+  }
+  &.d-flex {
+    display: block;
+  }
+
+  &.justify-content-center {
+    display: block;
+
+  }
+
+  &.MuiCardActions-spacing{
+    display: block;
+
+  }
 }
