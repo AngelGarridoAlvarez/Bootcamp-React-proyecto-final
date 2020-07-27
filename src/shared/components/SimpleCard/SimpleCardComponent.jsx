@@ -26,7 +26,7 @@ export default function OutlinedCard(props) {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root && props.className} variant="outlined">
+        <Card className={`${classes.root} ${props.className}`} variant="outlined">
             <CardContent className={props.className}>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
                     {props.text1}

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       '& > img': {
         maxHeight: '25px',
         objectFit: 'contain',
-        marginRight: '8px',
+        marginRight: theme.spacing(1)
       }
     },
   },

@@ -5,11 +5,6 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 
-const useStyles = makeStyles({
-  root: {
-  },
-});
-
 export function TabComponent({ tabs }) {
 
   const selectedTab = tabs.findIndex(element => element.selected)

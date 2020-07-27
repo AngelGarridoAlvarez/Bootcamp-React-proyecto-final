@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-
 import HomeIcon from '@material-ui/icons/Home';
 import SearchIcon from '@material-ui/icons/Search';
 import QuestionAnswerRoundedIcon from '@material-ui/icons/QuestionAnswerRounded';

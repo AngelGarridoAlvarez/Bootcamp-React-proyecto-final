@@ -1,11 +1,11 @@
 import React from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap } from 'react-google-maps';
+import { environment } from '../../shared/environment/environment';
 import NavBar from '../../shared/components/NavBar/NavBar';
 import SearchInput from '../../shared/components/SearchInput/SearchInput';
 import GoBackIcon from '../../shared/components/GoBackIcon/GoBackIcon';
-import { environment } from '../../shared/environment/environment';
-import './MapComponent.scss';
 import axios from "axios";
+import './MapComponent.scss';
 
 function Map() {
   return (
@@ -22,8 +22,9 @@ const WrappedMap = withScriptjs(withGoogleMap(Map));
 export function MapComponent() {
 
   axios.get(environment.url + '/locker/availableLockers', {
-    "Authorization":
-    "Bearer " + localStorage.getItem("userToken")
+    headers: {
+      "Authorization": "Bearer " + localStorage.getItem("userToken")
+    }
   }).then(res => console.log(res));
 
   return (

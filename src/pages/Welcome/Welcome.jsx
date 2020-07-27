@@ -3,8 +3,7 @@ import { CardComponent } from '../../modules/CardComponent/CardComponent';
 
 export function Welcome() {
 
-  const cardProperties =
-  {
+  const cardProperties = {
     image: 'assets/images/cadena@3x.png',
     alt: 'prisoner-shackle-image',
     title: 'Prepárate para liberarte de tu equipaje',

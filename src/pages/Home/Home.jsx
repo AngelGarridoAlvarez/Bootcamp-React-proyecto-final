@@ -16,34 +16,34 @@ export function Home() {
 
     return (
         <Container maxWidth="lg">
-            <GoBackIcon/>
-        <Grid container spacing={3}>
-            <Grid item xs={12}>
-                <h2 className="Search">Encuentra tu guardián</h2>
-            </Grid>
-            <Grid item xs={12}>
-                <SearchInput icon={<SearchIcon/>}/>
-            </Grid>
-            <Grid item xs={6}>
-                <DepositInput text="Depósito" />
-            </Grid>
-            <Grid item xs={6}>
-                <DepositInput text="Retirada" />
-            </Grid>
-            <Grid item xs={6}>
-                <CasesNumber />
-            </Grid>
-            <Grid item xs={6}>
-                <ButtonComponent title={"Buscar"} />
-            </Grid>
-            <Grid item xs={12}>
-                <DemoCarousel/>
-            </Grid>
-            <NextIcon newRoute="/Login"/>
+            <GoBackIcon />
+            <Grid container spacing={3}>
+                <Grid item xs={12}>
+                    <h2 className="Search">Encuentra tu guardián</h2>
+                </Grid>
+                <Grid item xs={12}>
+                    <SearchInput icon={<SearchIcon />} />
+                </Grid>
+                <Grid item xs={6}>
+                    <DepositInput text="Depósito" />
+                </Grid>
+                <Grid item xs={6}>
+                    <DepositInput text="Retirada" />
+                </Grid>
+                <Grid item xs={6}>
+                    <CasesNumber />
+                </Grid>
+                <Grid item xs={6}>
+                    <ButtonComponent title={"Buscar"} />
+                </Grid>
+                <Grid item xs={12}>
+                    <DemoCarousel />
+                </Grid>
+                <NextIcon newRoute="/Login" />
 
 
-            <BottomNav/>
-        </Grid>
+                <BottomNav />
+            </Grid>
         </Container>
 
     )

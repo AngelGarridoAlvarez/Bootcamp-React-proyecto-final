@@ -38,17 +38,17 @@ const useStyles = makeStyles((theme) => ({
 export default function CustomizedInputBase(props) {
 	const classes = useStyles();
 
-    let curr = new Date();
-    curr.setDate(curr.getDate() + 0);
-    let date = curr.toISOString().substr(0,16);
-    return (
-        <form className={classes.container} noValidate>
-            <TextField id="dateRequired"
-                       type="datetime-local"
-                       name="dateRequired"
-                       inputProps={{min:date, defaultValue: date}}
-                       label={props.text}
-            />
-        </form>
-    );
+	let curr = new Date();
+	curr.setDate(curr.getDate() + 0);
+	let date = curr.toISOString().substr(0, 16);
+	return (
+		<form className={classes.container} noValidate>
+			<TextField id="dateRequired"
+				type="datetime-local"
+				name="dateRequired"
+				inputProps={{ min: date, defaultValue: date }}
+				label={props.text}
+			/>
+		</form>
+	);
 }

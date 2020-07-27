@@ -27,20 +27,18 @@ export function Register() {
       marketing: data.marketing
     }, {
       headers: {
-        'Content-Type':'application/json',
+        'Content-Type': 'application/json',
       }
-    }).then(function(resp) {
-      console.log(resp);
+    }).then(function (_resp) {
       history.push('/login');
-    }).catch(function(err) {
-      console.log(err);
+    }).catch(function (_err) {
       history.push('/register');
     })
   }
 
   return (
     <Container maxWidth="lg">
-      <GoBackIcon/>
+      <GoBackIcon />
       <TabComponent tabs={tabs} />
       <h1>Únete a Maleteo y disfruta de sus ventajas</h1>
       <SocialLoginComponent />

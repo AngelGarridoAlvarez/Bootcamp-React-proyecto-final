@@ -5,11 +5,10 @@ import Paper from '@material-ui/core/Paper';
 import IconButton from '@material-ui/core/IconButton';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import InputBase from "@material-ui/core/InputBase";
-import {number} from "prop-types";
-import TextField from "@material-ui/core/TextField";
+
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: '0px 0px',
+        padding: '0px',
         display: 'flex',
         alignItems: 'center',
         width: '25vh',
@@ -32,12 +31,12 @@ export function CasesNumber() {
     return (
         <Paper component="form" className={classes.root}>
             <IconButton type="number" className={classes.iconButton} aria-label="search">
-                <BusinessCenterIcon/>
+                <BusinessCenterIcon />
             </IconButton>
             <InputBase
                 className={classes.input}
                 placeholder="Número de bultos"
-                inputProps={{ 'max':10, 'min':1, 'autocomplete':true }}
+                inputProps={{ 'max': 10, 'min': 1, 'autocomplete': true }}
                 id="standard-number"
                 label="Número de bultos"
                 type="number"

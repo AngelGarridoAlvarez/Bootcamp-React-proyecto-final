@@ -46,7 +46,7 @@ export default function SearchInput(props) {
 				placeholder="¿Dónde te encuentras? Jerez de la Frontera"
 				inputProps={{ 'aria-label': 'search google maps' }}
 				onClick={searchLocation}
-				color = "secondary"
+				color="secondary"
 			/>
 		</Paper>
 	);

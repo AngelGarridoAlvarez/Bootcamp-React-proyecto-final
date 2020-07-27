@@ -4,8 +4,7 @@ import '../../styles/start&welcome.scss';
 
 export function Welcome2() {
 
-  const cardProperties =
-  {
+  const cardProperties = {
     image: 'assets/images/world@3x.png',
     alt: 'globe-image',
     title: 'El mismo precio en cualquier parte',
@@ -16,8 +15,7 @@ export function Welcome2() {
     routeRates: '/rates'
   }
 
-
   return(
-  <CardComponent properties={cardProperties}/>
-)
+    <CardComponent properties={cardProperties}/>
+  )
 }
